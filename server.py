@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask
 from controllers.categories import CategoryAll
 from controllers.dishes import DishesAll
 from flask_restful import Api
