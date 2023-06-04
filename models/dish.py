@@ -9,7 +9,6 @@ class Dish(db.Model): #  represents a dish that can be purchased by users
     is_gluten_free = db.Column(db.Boolean,default=False)
     is_vegeterian = db.Column(db.Boolean,default=False)
     category_id = db.Column(db.Integer,db.ForeignKey('category.id'), nullable=False)
-    items = db.relationship('Items',backref="dish")
 
     def serialize(self):
         return {
