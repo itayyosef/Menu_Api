@@ -1,6 +1,5 @@
 from flask import request
 from flask_restful import Resource
-from db import db
 from models.dish import Dish
 
 class DishesAll(Resource):
